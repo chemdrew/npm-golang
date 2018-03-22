@@ -32,10 +32,8 @@ return downloadBinary(from, fs.createWriteStream(tarFileLocation)).then(() => {
   console.info('-> unpacking...');
   return untar(tarFileLocation, fileLocation);
 }).then(() => {
+  // does gopath need to be set here?
   console.log('-> golang installation complete!');
-  /*
-    set go path
-    */
 }).catch((err) => {
   console.error(err);
 });

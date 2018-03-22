@@ -6,6 +6,10 @@
     "go",
     "golang"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chemdrew/npm-golang.git"
+  },
   "bin": {
     "npm-golang": "./bin/index.js"
   },
