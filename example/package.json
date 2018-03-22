@@ -9,6 +9,6 @@
   "author": "Andrew Pratt <chemdrew1@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "npm-golang": "^0.1.0"
+    "npm-golang": "^0.2.0"
   }
 }
