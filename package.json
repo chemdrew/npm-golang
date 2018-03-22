@@ -1,0 +1,24 @@
+{
+  "name": "npm-golang",
+  "version": "0.1.0",
+  "description": "install and run golang from npm!",
+  "keywords": [
+    "go",
+    "golang"
+  ],
+  "bin": {
+    "npm-golang": "./bin/index.js"
+  },
+  "scripts": {
+    "clean": "rimraf go-download.tar.gz go-download"
+  },
+  "author": "Andrew Pratt <chemdrew1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.0",
+    "targz": "^1.0.1"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2"
+  }
+}

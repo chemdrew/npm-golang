@@ -1,0 +1,14 @@
+{
+  "name": "npm-golang-example",
+  "version": "1.0.0",
+  "description": "example",
+  "scripts": {
+    "install": "npm-golang install",
+    "start": "npm-golang go run main.go"
+  },
+  "author": "Andrew Pratt <chemdrew1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "npm-golang": "^0.1.0"
+  }
+}
