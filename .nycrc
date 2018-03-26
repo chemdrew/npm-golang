@@ -9,7 +9,7 @@
     "lib/**/*.js"
   ],
   "reporter": [
-    "text", "html"
+    "text"
   ],
   "cache": false,
   "all": true,
