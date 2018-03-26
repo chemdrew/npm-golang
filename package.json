@@ -16,7 +16,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf go-download.tar.gz go-download",
-    "test": "nyc ava __test__"
+    "test": "npm run coverage && nyc report --reporter=text-lcov | coveralls",
+    "unit": "ava __test__",
+    "coverage": "nyc npm run unit"
   },
   "author": "Andrew Pratt <chemdrew1@gmail.com>",
   "license": "MIT",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "coveralls": "^3.0.0",
     "nyc": "^11.6.0",
     "proxyquire": "^2.0.1",
     "rimraf": "^2.6.2",
