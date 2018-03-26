@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const pJson = require('./../package.json');
+const defaults = require('../lib/defaults');
 const go = require('../lib').go;
 
 program
-  .version(pJson.version, '-v, --version')
+  .version(defaults.version, '-v, --version')
   .parse(process.argv);
 
 go(program.args, console.error);

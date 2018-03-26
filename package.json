@@ -15,7 +15,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf go-download.tar.gz go-download"
+    "clean": "rimraf go-download.tar.gz go-download",
+    "test": "nyc ava __test__"
   },
   "author": "Andrew Pratt <chemdrew1@gmail.com>",
   "license": "MIT",
@@ -25,6 +26,10 @@
     "targz": "^1.0.1"
   },
   "devDependencies": {
-    "rimraf": "^2.6.2"
+    "ava": "^0.25.0",
+    "nyc": "^11.6.0",
+    "proxyquire": "^2.0.1",
+    "rimraf": "^2.6.2",
+    "sinon": "^4.4.8"
   }
 }
