@@ -9,6 +9,10 @@ test('exposes install method', t => {
   t.true(typeof library.install === 'function', 'install is not exposed');
 });
 
+test('exposes unpack method', t => {
+  t.true(typeof library.unpack === 'function', 'unpack is not exposed');
+});
+
 test('exposes go method', t => {
   t.true(typeof library.go === 'function', 'go is not exposed');
 });
