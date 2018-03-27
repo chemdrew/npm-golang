@@ -8,4 +8,11 @@ program
   .version(defaults.version, '-v, --version')
   .parse(process.argv);
 
+if (!program.args.length) {
+  console.error('Invalid arguments!');
+  console.error('-> npm-golang help go');
+  program.outputHelp();
+  process.exit(1);
+}
+
 go(program.args, console.error);

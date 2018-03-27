@@ -7,7 +7,7 @@ let unpack;
 
 test.beforeEach(t => {
   mocks['targz'] = { decompress : sinon.stub() };
-  unpack = proxyquire('./../../lib/_unpack', mocks);
+  unpack = proxyquire('./../../lib/unpack', mocks);
 });
 
 test.cb('unpacks to a file', t => {
